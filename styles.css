@@ -29,8 +29,7 @@ body {
 }
 
 .deslizar {
-    margin-top: 200px;
-    
+    margin-top: 220px;
 }
 
 /* Header */
@@ -52,7 +51,7 @@ body {
 .nav_fig {
     /* border: 2px purple solid; */
     display: flex;
-    height: 50px;
+    max-width: 200px;
     margin: 10px;
 }
 
@@ -83,7 +82,7 @@ body {
     background-position-y: center;
     background-position-x: center;
     height: 400px;
-    transition: all .4s linear;
+    transition: all 420ms ease-in-out;
 }
 
 .cont_slider_text {
@@ -140,7 +139,7 @@ body {
     /* border: 2px red solid; */
     background-color: var(--gris);
     border-radius: 20px;
-    width: 380px;
+    max-width: 380px;
     gap: 10px;
     padding: 35px;
     display: flex;

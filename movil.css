@@ -12,7 +12,6 @@
 
     .nav_fig {
         /* border: 2px purple solid; */
-        height: 80px;
         margin: 0;
     }
 
@@ -32,7 +31,7 @@
         position: absolute;
         padding: 10px 20px;
         width: 100%;
-        top: 100%;
+        top: 150%;
         left: 0;
     }
 
@@ -55,6 +54,14 @@
     }
 
     /* Servicios */
+
+    .titulo h2 {
+        font-size: 2.4em;
+    }
+
+    .titulo p {
+        font-size: 1.3em;
+    }
 
     .cont_servicios {
         /* border: 2px blue solid; */
