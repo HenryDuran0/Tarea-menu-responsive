@@ -1,0 +1,187 @@
+/* Generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arimo';
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+.ancho {
+    max-width: 1200px;
+    margin: auto;
+}
+
+:root {
+    --verde:#6cb500;
+    --gris:#f3f3f3;
+    --gris_oscuro:#333;
+}
+
+.verde {
+    color: var(--verde);
+}
+
+.deslizar {
+    margin-top: 200px;
+    
+}
+
+/* Header */
+
+.cont_boton_menu {
+    /* border: 2px red solid; */
+    color: var(--verde);
+    display: none;
+    align-items: center;
+    font-size: 3em;
+}
+
+.header_nav {
+    /* border: 2px red solid; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_fig {
+    /* border: 2px purple solid; */
+    display: flex;
+    height: 50px;
+    margin: 10px;
+}
+
+.nav_fig img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav_list {
+    /* border: 2px green solid; */
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav_list li a {
+    color: var(--gris_oscuro);
+    text-decoration: none;
+}
+
+/* Slider */
+
+.slider {
+    /* border: 2px red solid; */
+    background-image: url(imagenes/foto_slide.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    height: 400px;
+    transition: all .4s linear;
+}
+
+.cont_slider_text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cont_slider_text h1 {
+    color: white;
+    font-size: 2.6em;
+    font-weight: lighter;
+    max-width: 600px;
+    line-height: 40px;
+    margin: 150px;
+}
+
+/* Nuestros servicios */
+
+.cont_nuestros_servicios {
+    /* border: 2px red solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 15px;
+}
+
+.titulo h2 {
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+.titulo p {
+    font-size: 1.9em;
+}
+
+.cont_servicios {
+    /* border: 2px blue solid; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cont_servicio {
+    /* border: 2px red solid; */
+    background-color: var(--gris);
+    border-radius: 20px;
+    width: 380px;
+    gap: 10px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cont_servicio h2 {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.servicio_fig {
+    /* border: 2px red solid; */
+    display: flex;
+    width: 110px;
+}
+
+.servicio_fig img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--verde);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer_fig {
+    display: flex;
+    margin: 30px;
+    width: 250px;
+}
+
+.footer_fig img {
+    width: 100%;
+    object-fit: cover;
+}

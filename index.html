@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="movil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/429099fef3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="header_nav ancho">
+            <figure class="nav_fig">
+                <img src="imagenes/logo_arriba.png" alt="">
+            </figure>
+            <ul class="nav_list" id="nav_list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#Nuestros">Nuestros productos</a></li>
+                <li><a href="#contactanos">Contactanos</a></li>
+            </ul>
+            <div class="cont_boton_menu">
+                <i id="boton_menu" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="slider" id="slider">
+        <div class="ancho cont_slider_text">
+            <h1>Cultivamos verduras orgánicas y las traemos a tu mesa</h1>
+        </div>
+    </section>
+
+    <section class="cont_nuestros_servicios ancho">
+        <div class="titulo">
+            <h2>Nuestros servicios</h2>
+            <p><span class="verde">Lo que ofrecemos</span></p>
+        </div>
+        <article class="cont_servicios">
+            <div class="cont_servicio">
+                <figure class="servicio_fig">
+                    <img src="imagenes/icono1.png" alt="">
+                </figure>
+                <h2><span class="verde">Ganado Vacuno</span></h2>
+                <p>Carne de res producida sin ingeniería genética, uso de radiación ionizante o lodos de depuradora</p>
+            </div>
+            <div class="cont_servicio">
+                <figure class="servicio_fig">
+                    <img src="imagenes/icono2.png" alt="">
+                </figure>
+                <h2><span class="verde">Productos Lácteos</span></h2>
+                <p>Los productos lácteos como la leche, el queso y el yogur contienen los nutrientes que se cuerpo necesita.</p>
+            </div>
+            <div class="cont_servicio">
+                <figure class="servicio_fig">
+                    <img src="imagenes/icono3.png" alt="">
+                </figure>
+                <h2><span class="verde">rutas de la Huerta</span></h2>
+                <p>Cubre todo lo que necesita saber para cultivar y comercializar con éxito sus propias frutas orgánicas de de huerta</p>
+            </div>
+        </article>
+    </section>
+    <footer class="footer">
+        <figure class="footer_fig">
+            <img src="imagenes/logo_abajo.png" alt="">
+        </figure>
+    </footer>
+
+    <!-- Funciones -->
+    <script>
+        $("#boton_menu").click(function() {
+            $("#slider").toggleClass('deslizar');
+            $("#nav_list").slideToggle();
+        });
+    </script>
+</body>
+</html>

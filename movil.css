@@ -1,0 +1,65 @@
+@media screen and (max-width:480px){
+    /* Header */
+
+    .header {
+        padding: 30px;
+    }
+
+    .header_nav {
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .nav_fig {
+        /* border: 2px purple solid; */
+        height: 80px;
+        margin: 0;
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    .cont_boton_menu {
+        display: flex;
+    }
+
+    /* DEPLIEGUE MENU */
+
+    .nav_list {
+        background-color: #f3f3f3;
+        align-items: flex-start;
+        position: absolute;
+        padding: 10px 20px;
+        width: 100%;
+        top: 100%;
+        left: 0;
+    }
+
+    .nav_list li {
+        width: 100%;
+    }
+
+    .nav_list li a {
+        padding: 10px;
+        display: inline-block;
+        width: 100%;
+        border-bottom: 2px #333 dotted;
+    }
+
+    /* Slide */
+
+    .cont_slider_text h1 {
+        font-size: 2.5em;
+        margin: 20px;
+    }
+
+    /* Servicios */
+
+    .cont_servicios {
+        /* border: 2px blue solid; */
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
